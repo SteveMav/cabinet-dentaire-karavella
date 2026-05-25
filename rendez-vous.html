@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rendez-vous | Cabinet Dentaire Karavella - Concept</title>
+  <meta name="description" content="Concept de module de rendez-vous pour Cabinet Dentaire Karavella avec preparation de message WhatsApp, rappels et espace patient securise.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="rdv">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+  <div class="proposal-bar"><span>Concept de proposition non officiel</span><span>Le formulaire prepare une demande WhatsApp, il ne remplace pas la confirmation du cabinet</span></div>
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Navigation principale">
+      <a class="brand" href="index.html"><span class="brand-mark">K</span><span><strong>Karavella</strong><small>Chirurgie bucco-dentaire</small></span></a>
+      <div class="nav-links" data-nav-links>
+        <a href="index.html" data-nav="home">Accueil</a>
+        <a href="soins.html" data-nav="soins">Soins</a>
+        <a href="espace-patient.html" data-nav="patient">Espace patient</a>
+        <a href="rendez-vous.html" data-nav="rdv">Rendez-vous</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Changer le theme" aria-pressed="false"><i data-lucide="moon"></i></button>
+        <a class="button compact" href="https://wa.me/243818841554" target="_blank" rel="noreferrer"><i data-lucide="message-circle"></i><span>WhatsApp</span></a>
+        <button class="icon-button nav-toggle" type="button" data-nav-toggle aria-label="Ouvrir le menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero section-pad">
+      <div class="container narrow">
+        <p class="eyebrow">Rendez-vous et contact</p>
+        <h1>Preparer une demande claire en moins d'une minute.</h1>
+        <p>Le module montre comment un futur site pourrait collecter le motif, l'urgence et les disponibilites, puis transmettre une demande lisible a l'equipe via WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section-pad no-top">
+      <div class="container appointment-layout">
+        <form class="appointment-form" data-appointment-form>
+          <div class="form-heading">
+            <i data-lucide="calendar-plus"></i>
+            <div>
+              <h2>Demande de rendez-vous</h2>
+              <p>Les informations medicales sensibles seront confirmees directement avec le cabinet.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <label>Nom complet<input name="name" autocomplete="name" required placeholder="Votre nom"></label>
+            <label>Telephone / WhatsApp<input name="phone" autocomplete="tel" required placeholder="+243 ..."></label>
+            <label>Email optionnel<input name="email" type="email" autocomplete="email" placeholder="nom@email.com"></label>
+            <label>Type de soin<select name="service" required><option value="">Choisir</option><option>Consultation</option><option>Detartrage</option><option>Obturation</option><option>Devitalisation</option><option>Extraction</option><option>Gingivite / abces</option><option>Autre motif</option></select></label>
+            <label>Jour souhaite<input name="date" type="date" required></label>
+            <label>Plage horaire<select name="time" required><option value="">Choisir</option><option>Matin</option><option>Debut d'apres-midi</option><option>Fin d'apres-midi</option></select></label>
+          </div>
+          <fieldset>
+            <legend>Niveau d'urgence</legend>
+            <label class="radio-line"><input type="radio" name="urgency" value="Non urgent" checked> Non urgent</label>
+            <label class="radio-line"><input type="radio" name="urgency" value="Douleur ou gonflement"> Douleur ou gonflement</label>
+          </fieldset>
+          <label>Message<textarea name="message" rows="4" placeholder="Precisez le motif, la duree de la douleur ou toute information utile."></textarea></label>
+          <p class="privacy-note"><i data-lucide="lock"></i> Concept de parcours: un vrai portail patient devrait chiffrer les documents et limiter l'acces aux donnees medicales.</p>
+          <button class="button large" type="submit"><i data-lucide="send"></i><span>Preparer la demande WhatsApp</span></button>
+        </form>
+
+        <aside class="contact-panel">
+          <div class="image-frame compact-frame">
+            <img src="images/medical-detail.jpg" alt="Detail medical en consultation">
+          </div>
+          <div class="panel-block">
+            <h2>Contact direct</h2>
+            <a href="tel:+243818841554"><i data-lucide="phone"></i>+243 818 841 554</a>
+            <a href="tel:+243990374162"><i data-lucide="phone"></i>+243 990 374 162</a>
+            <a href="mailto:cabinetdentairekaravella@gmail.com"><i data-lucide="mail"></i>cabinetdentairekaravella@gmail.com</a>
+          </div>
+          <div class="panel-block">
+            <h2>Adresse</h2>
+            <p>Immeuble Crown Tower, 8eme etage, Local 803, 3098 Avenue Batetela, Gombe, Kinshasa.</p>
+          </div>
+          <div class="emergency-note">
+            <i data-lucide="alert-triangle"></i>
+            <p>Douleur intense ou gonflement: appeler le cabinet directement pendant les horaires d'ouverture.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band section-pad">
+      <div class="container module-grid">
+        <article>
+          <i data-lucide="bell-ring"></i>
+          <h2>Rappels intelligents</h2>
+          <p>Confirmation, rappel 24h avant la visite et message de preparation peuvent etre envoyes par WhatsApp ou SMS afin de reduire les rendez-vous manques.</p>
+        </article>
+        <article>
+          <i data-lucide="shield-check"></i>
+          <h2>Espace patient securise</h2>
+          <p>Un module futur pourrait centraliser historiques de rendez-vous, documents partages par le cabinet et consentements, avec acces limite et confidentiel.</p>
+        </article>
+        <article>
+          <i data-lucide="map-pinned"></i>
+          <h2>Arriver a Crown Tower</h2>
+          <p>La page contact peut rappeler l'etage, le local, les croisements utiles et les horaires pour eviter les appels repetitifs.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom"><span>Cabinet Dentaire Karavella - Concept non officiel</span><a href="contact.html">Voir contact</a></div>
+  </footer>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
