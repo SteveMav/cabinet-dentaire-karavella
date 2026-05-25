@@ -486,6 +486,15 @@ h3 {
   padding: 18px;
 }
 
+.feature-list article > i {
+  grid-row: 1 / span 2;
+}
+
+.feature-list article > h3,
+.feature-list article > p {
+  grid-column: 2;
+}
+
 .feature-list article i,
 .service-card i,
 .category-grid article i,
